@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --dancingFont: "Dancing Script", cursive;
+  --narrowfont: "PT Sans Narrow", sans-serif;
+  --whiteLight: rgb(237, 246, 248);
+  --primaryBlack: #000;
+  --primaryGreen: rgb(124, 175, 124);
+  --primaryblue: rgb(6, 6, 49);
+  --hoverblue: rgb(72, 72, 80);
+  --body: hsl(210, 12%, 90%);
+  --boxShadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.75);
+  --navHover: rgb(240, 165, 26);
+  --linkHover: rgb(235, 182, 83);
+}
+
+body {
+  background-color: var(--body);
+  font-family: var(--narrowfont);
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 5rem 0 5rem;
+}
+
+.nav-container a {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.nav-container .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.nav-container .nav-left img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.nav-container .nav-left h3 {
+  font-family: var(--dancingFont);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav-container .nav-right .large-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-container .nav-right .large-ul a {
+  cursor: default;
+}
+
+.nav-container .nav-right .large-ul li {
+  margin-left: 2rem;
+  list-style: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.nav-container .nav-right .large-ul li:hover {
+  color: var(--navHover);
+}
+
+.small-nav {
+  display: none;
+}
+
+.toggle-icon {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  display: none;
+  border: none;
+  background-color: var(--body);
+  cursor: pointer;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media (max-width: 992px) {
+  .small-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(--whiteLight);
+    height: 84.5vh;
+    margin-top: 6rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: -100%;
+    -webkit-transition: 0.7s ease-in all;
+    transition: 0.7s ease-in all;
+    overflow: hidden;
+  }
+  .small-nav .icons {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-top: 2rem;
+    margin-right: 4rem;
+  }
+  .small-nav .icons .icon {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+    margin-left: 4rem;
+  }
+  .small-nav .icons .icon:hover {
+    color: var(--hoverblue);
+  }
+  .show-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(--whiteLight);
+    height: 84vh;
+    margin-top: 6rem;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 0.9s all ease-in;
+    transition: 0.9s all ease-in;
+  }
+  .toggle-icon {
+    display: block !important;
+    margin-top: 1rem;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .toggle-icon:hover {
+    -webkit-transform: rotate(90deg) scale(2);
+            transform: rotate(90deg) scale(2);
+  }
+  .small-ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    margin-top: 7rem;
+  }
+  .small-ul a {
+    cursor: default;
+    margin-top: -10px;
+  }
+  .small-ul li {
+    margin: 2rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .small-ul li:hover {
+    color: var(--navHover);
+  }
+  .large-ul {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,12 +1,12 @@
 import React from "react";
-import { FaBars } from "react-icons/fa";
+import Navbar from "./Components/Navbar";
+import "./styles.css";
 
 const App = () => {
   return (
-    <div>
-      App
-      <FaBars />
-    </div>
+    <>
+      <Navbar />
+    </>
   );
 };
 
