@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -10,7 +12,9 @@
 :root {
   --dancingFont: "Dancing Script", cursive;
   --narrowfont: "PT Sans Narrow", sans-serif;
-  --whiteLight: rgb(237, 246, 248);
+  --thickFont: "Lato", sans-serif;
+  --semiThickFont: "Rubik", sans-serif;
+  --gray: rgb(80, 76, 76);
   --primaryBlack: #000;
   --primaryGreen: rgb(124, 175, 124);
   --primaryblue: rgb(6, 6, 49);
@@ -19,6 +23,7 @@
   --boxShadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.75);
   --navHover: rgb(240, 165, 26);
   --linkHover: rgb(235, 182, 83);
+  --whiteLight: rgb(220, 238, 235);
 }
 
 body {
@@ -35,6 +40,23 @@ h4 {
 a {
   text-decoration: none;
   color: black;
+}
+.btn {
+  padding: 15px 30px 15px 30px;
+  width: max-content;
+  background-color: var(--primaryblue);
+  color: var(--whiteLight);
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.3s all ease-out;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+.btn:hover {
+  color: var(--primaryblue);
+  background-color: var(--whiteLight);
+  font-weight: 600;
 }
 
 .nav-container {
@@ -100,6 +122,7 @@ a {
     left: -100%;
     transition: 0.7s ease-in all;
     overflow: hidden;
+
     .icons {
       height: max-content;
       margin-top: 2rem;
@@ -124,6 +147,8 @@ a {
     width: 100%;
     justify-content: center;
     transition: 0.9s all ease-in;
+    overflow: hidden;
+    z-index: 999;
   }
 
   .toggle-icon {
@@ -132,7 +157,7 @@ a {
     transition: 0.5s ease-in-out;
   }
   .toggle-icon:hover {
-    transform: rotate(90deg) scale(2);
+    transform: rotate(360deg) scale(2);
   }
   .small-ul {
     list-style: none;
@@ -159,5 +184,56 @@ a {
 
   .large-ul {
     display: none !important;
+  }
+}
+
+.section {
+  margin: 5rem 5rem 0 5rem;
+  // border: 1px solid white;
+  min-height: 80vh;
+  font-family: var(--thickFont);
+}
+.home {
+  display: flex;
+}
+.home-left {
+  flex: 1.1;
+  padding-top: 14rem;
+  h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: var(--thickFont);
+    color: var(--primaryblue);
+  }
+  p {
+    margin-top: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--gray);
+    span {
+      font-size: 1.4rem;
+    }
+  }
+  .btn-home {
+    margin-top: 5rem;
+  }
+}
+
+.home-right {
+  flex: 1;
+  // border: 1px solid white;
+  position: relative;
+  img {
+    float: right;
+    width: 80%;
   }
 }
