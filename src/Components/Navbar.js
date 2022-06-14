@@ -53,7 +53,7 @@ const Navbar = () => {
             <a href="#home">
               <RiFacebookBoxFill className="icon" />
             </a>
-            <a href="home">
+            <a href="#home">
               <RiTwitterFill className="icon" />
             </a>
             <a href="#home">
