@@ -8,10 +8,13 @@ const Home = () => {
         <h4>Hi guys , I am</h4>
         <h1>adeyemi abraham</h1>
         <p>
-          A Nigerian based self taught <span>Front-End Developer </span>and an
-          aspiring block chain developer
+          A Nigerian based self taught Front-End Web Developer and an aspiring
+          block chain developer who is specialized in building exceptional
+          responsive websites for better experience
         </p>
-        <button className="btn btn-home">Hire Me</button>
+        <a href="#home">
+          <button className="btn btn-home">Hire Me</button>
+        </a>
       </div>
 
       <div className="home-right">
