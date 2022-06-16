@@ -18,7 +18,7 @@ html {
   --narrowfont: "PT Sans Narrow", sans-serif;
   --thickFont: "Lato", sans-serif;
   --semiThickFont: "Rubik", sans-serif;
-  --gray: rgb(80, 76, 76);
+  --gray: rgb(131, 128, 128);
   --primaryBlack: #000;
   --primaryGreen: rgb(124, 175, 124);
   --primaryblue: rgb(6, 6, 49);
@@ -49,6 +49,10 @@ h2,
 h3,
 h4 {
   text-transform: capitalize;
+}
+
+p {
+  color: var(--gray);
 }
 
 a {
@@ -288,7 +292,6 @@ a {
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: capitalize;
-  color: var(--gray);
 }
 
 .home-left .btn-home {
@@ -386,7 +389,6 @@ a {
 .about .about-right .about-text p {
   font-size: 1.3rem;
   font-weight: 800;
-  color: var(--gray);
   margin-top: 2rem;
   line-height: 2rem;
 }
@@ -400,6 +402,175 @@ a {
   }
   .about .about-text {
     margin-left: 0rem !important;
+  }
+}
+
+.skills {
+  background-color: var(--primaryblue);
+  margin: 0;
+  padding: 4.7rem;
+}
+
+.skills .skills-top h3 {
+  color: var(--body);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.skills .skills-top h1 {
+  font-size: 2.8rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  color: var(--body);
+}
+
+.skills .skills-top p {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  color: var(--gray);
+  font-weight: 900;
+}
+
+.skills .skills-bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 1.6rem;
+}
+
+.skills .skills-bottom .skill {
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+.skills .skills-bottom .skill .skills-icon {
+  margin-right: 1.3rem;
+  margin-top: 1.6rem;
+  color: var(--body);
+}
+
+.skills .skills-bottom .skill .skills-icon:hover {
+  color: var(--gray);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.skills .skills-bottom .skill h3 {
+  margin-top: 13px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  color: var(--body);
+}
+
+.skills .skills-bottom .skill h3:hover {
+  color: var(--gray);
+}
+
+.skill:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+@media (max-width: 1350px) {
+  .skills {
+    margin-top: 5rem;
+  }
+  .skills-bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .skills-bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+}
+
+.top-link {
+  right: 30px;
+  bottom: 30px;
+  position: fixed;
+  background-color: var(--primaryblue);
+  color: var(--body);
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 5px;
+  -webkit-animation: bounce 2s ease-in-out infinite;
+          animation: bounce 2s ease-in-out infinite;
+  opacity: 0;
+  -webkit-transition: 1s ease-in-out all;
+  transition: 1s ease-in-out all;
+  border: none;
+  cursor: default;
+}
+
+.fa-angle {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.show-toplink {
+  right: 30px;
+  bottom: 30px;
+  position: fixed;
+  background-color: var(--primaryblue);
+  color: var(--body);
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 5px;
+  -webkit-animation: bounce 2s ease-in-out infinite;
+          animation: bounce 2s ease-in-out infinite;
+  opacity: 1;
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=styles.css.map */

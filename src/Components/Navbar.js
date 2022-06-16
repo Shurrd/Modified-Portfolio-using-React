@@ -18,7 +18,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="nav-container">
+      <nav className="nav-container" id="home">
         <a href="#home">
           <div className="nav-left">
             <img src={Favicon} alt="Abraham" />
@@ -36,7 +36,7 @@ const Navbar = () => {
               <li>Skills</li>
             </a>
             <a href="#portfolio">
-              <li>Portfolio</li>
+              <li>Projects</li>
             </a>
             <a href="#contact">
               <li>Contact</li>
@@ -77,7 +77,7 @@ const Navbar = () => {
               <li>Skills</li>
             </a>
             <a href="#portfolio">
-              <li>Portfolio</li>
+              <li>Projects</li>
             </a>
             <a href="#contact">
               <li>Contact</li>
