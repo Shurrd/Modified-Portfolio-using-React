@@ -32,6 +32,12 @@ html {
   background-color: var(--linkHover);
 }
 
+.section {
+  margin: 5rem 5rem 0 5rem;
+  min-height: 90vh;
+  font-family: var(--thickFont);
+}
+
 body {
   background-color: var(--body);
   font-family: var(--narrowfont);
@@ -197,12 +203,6 @@ a {
   }
 }
 
-.section {
-  margin: 5rem 5rem 0 5rem;
-  // border: 1px solid white;
-  min-height: 80vh;
-  font-family: var(--thickFont);
-}
 .home {
   display: flex;
 }
@@ -232,8 +232,22 @@ a {
     font-weight: 600;
     text-transform: capitalize;
   }
+
   .btn-home {
     margin-top: 5rem;
+    transition: 0.6s all ease-in-out;
+    .arrow {
+      margin-left: 1.3rem;
+      font-weight: 900;
+      transform: scale(1.5);
+      padding-top: 5px;
+      display: none;
+    }
+  }
+  .btn-home:hover {
+    .arrow {
+      display: inline;
+    }
   }
 }
 
@@ -444,5 +458,83 @@ a {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+.projects {
+  .projects-text {
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    h1 {
+      font-size: 2.8rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-weight: 800;
+      color: var(--primaryblue);
+    }
+    p {
+      margin-top: 1.2rem;
+      font-size: 1.2rem;
+      color: var(--gray);
+      font-weight: 900;
+    }
+  }
+  .projects-container {
+    height: auto;
+    border: 1px solid white;
+    margin-top: 3rem;
+    .project {
+      display: flex;
+      margin-top: 6rem;
+      .project-left {
+        flex: 1;
+        img {
+          width: 100%;
+          height: 80%;
+        }
+      }
+      .project-right {
+        flex: 1;
+        margin-left: 3rem;
+        .one {
+          color: var(--gray);
+          font-size: 3.5rem;
+        }
+        h1 {
+          color: var(--primaryblue);
+          margin-top: 14px;
+          font-weight: 800;
+          font-size: 4rem;
+        }
+        p {
+          margin-top: 1.2rem;
+          font-size: 1.2rem;
+          color: var(--gray);
+          font-weight: 900;
+        }
+        .tools-container {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 2rem;
+          margin-right: 6rem;
+          p {
+            background-color: var(--gray);
+            color: black;
+            padding: 10px;
+            border-radius: 8px;
+          }
+        }
+        .link-container {
+          margin-top: 1.8rem;
+          a {
+            margin-right: 2.5rem;
+            font-size: 1.8rem;
+            color: var(--primaryblue);
+          }
+        }
+      }
+    }
   }
 }

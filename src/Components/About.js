@@ -5,11 +5,11 @@ import "aos/dist/aos.css";
 
 const About = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 600 });
   }, []);
 
   return (
-    <section className="section about" id="about" data-aos="slide-up">
+    <section className="section about" id="about">
       <div className="about-left">
         <img src={Abraham} alt="abraham" />
       </div>
