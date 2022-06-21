@@ -236,18 +236,6 @@ a {
   .btn-home {
     margin-top: 5rem;
     transition: 0.6s all ease-in-out;
-    .arrow {
-      margin-left: 1.3rem;
-      font-weight: 900;
-      transform: scale(1.5);
-      padding-top: 5px;
-      display: none;
-    }
-  }
-  .btn-home:hover {
-    .arrow {
-      display: inline;
-    }
   }
 }
 
@@ -473,6 +461,7 @@ a {
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       font-weight: 800;
       color: var(--primaryblue);
+      margin-top: 30px;
     }
     p {
       margin-top: 1.2rem;
@@ -483,8 +472,16 @@ a {
   }
   .projects-container {
     height: auto;
-    border: 1px solid white;
     margin-top: 3rem;
+    .underline {
+      height: 3px;
+      background-color: var(--linkHover);
+      width: 100%;
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+      opacity: 0.5;
+      box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.75);
+    }
     .project {
       display: flex;
       margin-top: 6rem;
@@ -519,6 +516,7 @@ a {
           justify-content: space-between;
           margin-top: 2rem;
           margin-right: 6rem;
+          flex-wrap: wrap;
           p {
             background-color: var(--gray);
             color: black;
@@ -535,6 +533,16 @@ a {
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    .project-right {
+      margin-top: 5rem;
     }
   }
 }

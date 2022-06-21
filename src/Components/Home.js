@@ -1,6 +1,5 @@
 import React from "react";
 import Computer from "../Images/computer.png";
-import { BsArrowRight } from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -14,10 +13,7 @@ const Home = () => {
           responsive websites for better experience
         </p>
         <a href="#home" className="home-btn">
-          <button className="btn btn-home">
-            Hire Me
-            <BsArrowRight className="arrow" />
-          </button>
+          <button className="btn btn-home">Hire Me</button>
         </a>
       </div>
 

@@ -4,15 +4,16 @@ import "./styles.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
-import { FaAngleUp } from "react-icons/fa";
 import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import { FaAngleUp } from "react-icons/fa";
 
 const App = () => {
   const [topLink, setTopLink] = useState(false);
 
   const handleScroll = () => {
     const scrollHeight = window.pageYOffset;
-    if (scrollHeight >= 300) {
+    if (scrollHeight >= 400) {
       setTopLink(true);
     } else {
       setTopLink(false);
@@ -46,6 +47,7 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </>
   );
 };
