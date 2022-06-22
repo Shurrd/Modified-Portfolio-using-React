@@ -65,7 +65,6 @@ a {
   font-size: 1.2rem;
   transition: 0.3s all ease-out;
   text-transform: uppercase;
-
   border: 1px solid black;
 }
 .btn:hover {
@@ -543,6 +542,82 @@ a {
     flex-direction: column;
     .project-right {
       margin-top: 5rem;
+    }
+  }
+}
+
+.contact {
+  background-color: var(--primaryblue);
+  margin: 3rem 0 0 0;
+  padding: 4.7rem;
+  min-height: 60vh;
+  .mail-btn {
+    color: var(--gray);
+    font-weight: 600;
+    &:hover {
+      color: var(--primaryblue);
+    }
+  }
+  h3 {
+    color: var(--linkHover);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  h1 {
+    color: var(--body);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 900;
+  }
+  p {
+    margin-bottom: 2rem !important;
+    margin-top: 3rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+  #copy {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact {
+    h3 {
+      font-size: 1.3rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+footer {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--gray);
+  .footer-left {
+    font-size: 1.4rem;
+    margin-top: 1.3rem;
+    font-family: var(--dancingFont);
+    font-weight: 700;
+  }
+  .footer-right {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.3rem;
+    a {
+      color: var(--body);
+      font-size: 1.4rem;
+      height: fit-content;
+      text-transform: lowercase;
+      font-family: var(--dancingFont);
+      font-weight: 700;
     }
   }
 }
