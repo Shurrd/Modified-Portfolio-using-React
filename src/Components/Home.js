@@ -12,7 +12,7 @@ const Home = () => {
           block chain developer who is specialized in building exceptional
           responsive websites for better experience
         </p>
-        <a href="#home" className="home-btn">
+        <a href="mailto: engraaadeyemi@gmail.com" className="home-btn">
           <button className="btn btn-home">Hire Me</button>
         </a>
       </div>

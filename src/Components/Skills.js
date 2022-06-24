@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import {
   SiJavascript,
   SiReact,
@@ -11,10 +12,15 @@ import {
   SiSass,
   SiFirebase,
 } from "react-icons/si";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({ duration: 600 });
+  }, []);
   return (
-    <section className="section skills" id="skills">
+    <section className="section skills" id="skills" data-aos="fade-up">
       <div className="skills-top">
         <h3>skills</h3>
         <h1>the technologies i work with</h1>

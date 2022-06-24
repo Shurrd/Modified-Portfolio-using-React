@@ -4,9 +4,7 @@ import {
   RiMenu4Fill,
   RiCloseFill,
   RiGithubFill,
-  RiFacebookBoxFill,
   RiTwitterFill,
-  RiInstagramFill,
   RiLinkedinBoxFill,
 } from "react-icons/ri";
 
@@ -50,19 +48,25 @@ const Navbar = () => {
 
         <div className={nav ? "small-nav show-nav" : "small-nav"}>
           <div className="icons">
-            <a href="#home">
-              <RiFacebookBoxFill className="icon" />
-            </a>
-            <a href="#home">
+            <a
+              href="https://twitter.com/shurrrrd"
+              target="_blank"
+              rel="noreferrer"
+            >
               <RiTwitterFill className="icon" />
             </a>
-            <a href="#home">
+            <a
+              href="https://www.linkedin.com/in/adeoluwa-adeyemi-45743222b/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <RiLinkedinBoxFill className="icon" />
             </a>
-            <a href="#home">
-              <RiInstagramFill className="icon" />
-            </a>
-            <a href="#home">
+            <a
+              href="https://github.com/Shurrd"
+              target="_blank"
+              rel="noreferrer"
+            >
               <RiGithubFill className="icon" />
             </a>
           </div>

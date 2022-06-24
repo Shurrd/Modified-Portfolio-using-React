@@ -9,7 +9,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="section about" id="about">
+    <section className="section about" id="about" data-aos="fade-up">
       <div className="about-left">
         <img src={Abraham} alt="abraham" />
       </div>

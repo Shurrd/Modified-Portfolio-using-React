@@ -8,8 +8,7 @@ const Projects = () => {
   return (
     <section className="section projects" id="projects">
       <div className="projects-text">
-        <h3>MY PROJECTS</h3>
-        <h1>Some things i built</h1>
+        <h1>MY PROJECTS</h1>
         <p>
           These are some of the projects I have worked on through the course of
           my learning
@@ -35,10 +34,18 @@ const Projects = () => {
               <p>SCSS</p>
             </div>
             <div className="link-container">
-              <a href="https://github.com/Shurrd/krypto-react">
+              <a
+                href="https://github.com/Shurrd/krypto-react"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub />
               </a>
-              <a href="https://mykryptoapp.netlify.app">
+              <a
+                href="https://mykryptoapp.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLink />
               </a>
             </div>
@@ -62,10 +69,18 @@ const Projects = () => {
               <p>CSS</p>
             </div>
             <div className="link-container">
-              <a href="https://github.com/Shurrd/birthday-reminder-using-reactt">
+              <a
+                href="https://github.com/Shurrd/birthday-reminder-using-reactt"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub />
               </a>
-              <a href="https://reactjs-birthdays-reminder.netlify.app/">
+              <a
+                href="https://reactjs-birthdays-reminder.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLink />
               </a>
             </div>
@@ -92,10 +107,18 @@ const Projects = () => {
               <p>CSS</p>
             </div>
             <div className="link-container">
-              <a href="https://github.com/Shurrd/Cocktail-Website">
+              <a
+                href="https://github.com/Shurrd/Cocktail-Website"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub />
               </a>
-              <a href="https://react-cocktails-website.netlify.app">
+              <a
+                href="https://react-cocktails-website.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLink />
               </a>
             </div>

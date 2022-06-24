@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 600 });
+  }, []);
   return (
-    <section className="section contact" id="contact">
+    <section className="section contact" id="contact" data-aos="fade-up">
       <h3 className="h3">Have a Project? or just looking to hire?</h3>
       <h1>Let's Work Together </h1>
       <p>
