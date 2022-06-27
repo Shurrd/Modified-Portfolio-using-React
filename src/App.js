@@ -14,7 +14,7 @@ const App = () => {
 
   const handleScroll = () => {
     const scrollHeight = window.pageYOffset;
-    if (scrollHeight >= 600) {
+    if (scrollHeight >= 400) {
       setTopLink(true);
     } else {
       setTopLink(false);
