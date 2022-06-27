@@ -521,6 +521,7 @@ a {
   transition: 1s ease-in-out all;
   border: none;
   cursor: default;
+  z-index: 9999;
 }
 
 .fa-angle {
@@ -544,7 +545,7 @@ a {
   transition: 1s all ease-in-out;
   border: none;
   cursor: pointer;
-  z-index: 999;
+  z-index: 9999;
 }
 
 @-webkit-keyframes bounce {
@@ -766,7 +767,7 @@ footer {
 }
 
 footer .footer-left {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin-top: 1.3rem;
   font-family: var(--dancingFont);
   font-weight: 700;
@@ -782,7 +783,7 @@ footer .footer-right {
 
 footer .footer-right a {
   color: var(--body);
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
