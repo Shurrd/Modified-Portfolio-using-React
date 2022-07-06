@@ -2,6 +2,7 @@ import React from "react";
 import Birthday from "../Images/birthday.PNG";
 import Krypto from "../Images/kryptoapp.PNG";
 import Cocktail from "../Images/cocktaildb.PNG";
+import Feetness from "../Images/feetnessgym.PNG";
 import { FaLink, FaGithub } from "react-icons/fa";
 
 const Projects = () => {
@@ -116,6 +117,45 @@ const Projects = () => {
               </a>
               <a
                 href="https://react-cocktails-website.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLink />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="underline"></div>
+        <div className="project">
+          <div className="project-left">
+            <img src={Feetness} alt="cocktail" />
+          </div>
+          <div className="project-right">
+            <h1 className="one">04</h1>
+            <h1>FEETNESS GYM</h1>
+            <p>
+              Are you feeling unfit, feetness gym is the best website for you to
+              track your fitness life and also get new exercise videos from
+              youtube and you also have the opportunity to see similar exercises
+              relating to your proposed exercise.
+            </p>
+            <div className="tools-container">
+              <p>React Js</p>
+              <p>Material UI</p>
+              <p>ExerciseDB</p>
+              <p>YoutubeDB</p>
+              <p>React Router DOM</p>
+            </div>
+            <div className="link-container">
+              <a
+                href="https://github.com/Shurrd/Gym-Exercises"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://myfeetnessgym.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
