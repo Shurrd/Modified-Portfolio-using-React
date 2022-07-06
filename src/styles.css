@@ -767,7 +767,7 @@ footer {
 }
 
 footer .footer-left {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 1.3rem;
   font-family: var(--dancingFont);
   font-weight: 700;
@@ -783,7 +783,7 @@ footer .footer-right {
 
 footer .footer-right a {
   color: var(--body);
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
