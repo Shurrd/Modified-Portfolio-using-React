@@ -3,6 +3,7 @@ import Birthday from "../Images/birthday.PNG";
 import Krypto from "../Images/kryptoapp.PNG";
 import Cocktail from "../Images/cocktaildb.PNG";
 import Feetness from "../Images/feetnessgym.PNG";
+import Weather from "../Images/weather.PNG";
 import { FaLink, FaGithub } from "react-icons/fa";
 
 const Projects = () => {
@@ -128,7 +129,7 @@ const Projects = () => {
         <div className="underline"></div>
         <div className="project">
           <div className="project-left">
-            <img src={Feetness} alt="cocktail" />
+            <img src={Feetness} alt="feetness gym" />
           </div>
           <div className="project-right">
             <h1 className="one">04</h1>
@@ -156,6 +157,45 @@ const Projects = () => {
               </a>
               <a
                 href="https://myfeetnessgym.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLink />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="underline"></div>
+        <div className="project">
+          <div className="project-left">
+            <img src={Weather} alt="weather app" />
+          </div>
+          <div className="project-right">
+            <h1 className="one">05</h1>
+            <h1>WEATHER APP</h1>
+            <p>
+              Cheaking the weather is really good, especially if yu are about to
+              embark on a journey or visit a new location. This weather app has
+              got you, you can the check the temperature in farenheit for any
+              location and you can alos check the humidity, wind speed and many
+              more
+            </p>
+            <div className="tools-container">
+              <p>React Js</p>
+              <p>Tailwind Css</p>
+              <p>OpenWeatherMap API</p>
+              <p>TypeScript</p>
+            </div>
+            <div className="link-container">
+              <a
+                href="https://github.com/Shurrd/weather-app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://checkstheweather.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
