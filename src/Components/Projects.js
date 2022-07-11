@@ -174,11 +174,11 @@ const Projects = () => {
             <h1 className="one">05</h1>
             <h1>WEATHER APP</h1>
             <p>
-              Cheaking the weather is really good, especially if yu are about to
-              embark on a journey or visit a new location. This weather app has
-              got you, you can the check the temperature in farenheit for any
-              location and you can alos check the humidity, wind speed and many
-              more
+              Checking the weather is really good, especially if you are about
+              to embark on a journey or visit a new location. This weather app
+              has got you, you can the check the temperature in farenheit for
+              any location and you can alos check the humidity, wind speed and
+              many more
             </p>
             <div className="tools-container">
               <p>React Js</p>
