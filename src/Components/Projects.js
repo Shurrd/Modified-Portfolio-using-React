@@ -1,5 +1,4 @@
 import React from "react";
-import Birthday from "../Images/birthday.PNG";
 import Krypto from "../Images/kryptoapp.PNG";
 import Cocktail from "../Images/cocktaildb.PNG";
 import Feetness from "../Images/feetnessgym.PNG";
