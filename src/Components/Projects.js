@@ -4,6 +4,7 @@ import Krypto from "../Images/kryptoapp.PNG";
 import Cocktail from "../Images/cocktaildb.PNG";
 import Feetness from "../Images/feetnessgym.PNG";
 import Weather from "../Images/weather.PNG";
+import Countries from "../Images/countries.PNG";
 import { FaLink, FaGithub } from "react-icons/fa";
 
 const Projects = () => {
@@ -56,30 +57,33 @@ const Projects = () => {
         <div className="underline"></div>
         <div className="project">
           <div className="project-left">
-            <img src={Birthday} alt="birthday" />
+            <img src={Countries} alt="countries" />
           </div>
           <div className="project-right">
             <h1 className="one">02</h1>
-            <h1>BIRTHDAYS TODAY</h1>
+            <h1>REST COUNTRIES API</h1>
             <p>
-              This is a mini project to determine the birthdays that are
-              happening today. This was my first react project.
+              This displays all the countries in the world, you can search for a
+              specific country and filter based on any region of your choice and
+              all comes with a dark mode option.
             </p>
             <div className="tools-container">
               <p>React Js</p>
-              <p>React Hooks</p>
-              <p>CSS</p>
+              <p>React Router DOM</p>
+              <p>Rest-Contries API</p>
+              <p>Tailwind CSS</p>
+              <p>Context API</p>
             </div>
             <div className="link-container">
               <a
-                href="https://github.com/Shurrd/birthday-reminder-using-reactt"
+                href="https://github.com/Shurrd/rest-countries-api"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaGithub />
               </a>
               <a
-                href="https://reactjs-birthdays-reminder.netlify.app/"
+                href="https://restcountries-api-abraham.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
