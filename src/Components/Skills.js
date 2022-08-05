@@ -1,19 +1,7 @@
 import React, { useEffect } from "react";
-
-import {
-  SiJavascript,
-  SiReact,
-  SiHtml5,
-  SiCss3,
-  SiBootstrap,
-  SiTailwindcss,
-  SiPython,
-  SiGit,
-  SiSass,
-  SiFirebase,
-} from "react-icons/si";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import skills from "../utils/skill";
 
 const Skills = () => {
   useEffect(() => {
@@ -31,46 +19,15 @@ const Skills = () => {
         </p>
       </div>
       <div className="skills-bottom">
-        <div className="skill">
-          <SiHtml5 className="skills-icon" size={70} />
-          <h3>html5</h3>
-        </div>
-        <div className="skill">
-          <SiCss3 className="skills-icon" size={70} />
-          <h3>css3</h3>
-        </div>
-        <div className="skill">
-          <SiJavascript className="skills-icon" size={70} />
-          <h3>JavaScript(ES6+)</h3>
-        </div>
-        <div className="skill">
-          <SiBootstrap className="skills-icon" size={70} />
-          <h3>bootstrap</h3>
-        </div>
-        <div className="skill">
-          <SiReact className="skills-icon" size={70} />
-          <h3>reactjs</h3>
-        </div>
-        <div className="skill">
-          <SiTailwindcss className="skills-icon" size={70} />
-          <h3>tailwind css</h3>
-        </div>
-        <div className="skill">
-          <SiGit className="skills-icon" size={70} />
-          <h3>git</h3>
-        </div>
-        <div className="skill">
-          <SiSass className="skills-icon" size={70} />
-          <h3>sass</h3>
-        </div>
-        <div className="skill">
-          <SiFirebase className="skills-icon" size={70} />
-          <h3>firebase</h3>
-        </div>
-        <div className="skill">
-          <SiPython className="skills-icon" size={70} />
-          <h3>python</h3>
-        </div>
+        {skills.map((skill, index) => {
+          const Icon = skill.icon;
+          return (
+            <div className="skill" key={index}>
+              <Icon className="skills-icon" size={70} />
+              <h3>{skill.name}</h3>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
